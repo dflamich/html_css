@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  background-color: purple;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
+.header-home {
+  margin-left: 10px;
+  background-color: purple;
+}
+
+.header-home-button {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s color 0.15s ;
+}
+
+.header-home-button:hover {
+  background-color: white;
+  color: purple;
+}
+
+.header-search {
+  flex: 1;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 300px;
+}
+
+.header-search-input {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border:none;
+  border-radius: 20px;
+}
+
+.header-download {
+  background-color: purple;
+  margin-right: 10px;
+}
+
+.header-download-button {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s color 0.15s ;
+}
+
+.header-download-button:hover {
+  background-color: white;
+  color: purple;
+}

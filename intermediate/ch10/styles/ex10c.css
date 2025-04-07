@@ -1,0 +1,48 @@
+.video {
+  margin-bottom: 7px;
+}
+
+.video-thumbnail {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.video-thumbnail-image {
+  width: 170px;
+  border-radius: 10px;
+}
+
+.video-info {
+  display: inline-block;
+  width: 350px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+
+p {
+  font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.video-info-title {
+  margin-bottom: 6px;
+}
+
+
+.video-info-title-text {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.video-info-channel {
+  margin-bottom: 5px;
+}
+
+.video-info-channel-text,
+.video-info-stats-text 
+{
+  font-size: 13px;
+  color: rgb(60, 60, 60);
+}

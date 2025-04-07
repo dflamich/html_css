@@ -1,0 +1,41 @@
+div {
+  text-align: center;
+  display: inline-block;
+  width: 500px;
+}
+
+.logo {
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.searchbar {
+  font-family: Arial;
+  width: 200px;
+  margin-bottom: 25px;
+  padding-right: 230px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border:none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.searchbar::placeholder {
+  font-family: Arial;
+}
+
+button {
+  font-family: Arial;
+  margin-left:  5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border:none;
+  cursor: pointer;
+}
