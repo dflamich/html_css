@@ -1,0 +1,27 @@
+p {
+  font-family: Arial;
+  font-size: 14px;    
+  margin-top: 0;
+  margin-bottom: 0; 
+  width: 450px;
+}
+.tweet-info {
+  margin-bottom: 6px;
+}
+.username {
+  font-weight: bold;
+  cursor: pointer;
+}
+.at {
+  color: gray;
+}
+.posted-ago {
+  color: gray;
+}
+.tweet-first-part {
+  margin-bottom: 20px;
+}
+.tag {
+  color: blue;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+p {
+  font-family: Arial;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sum {
+  font-size: 26px;
+}
+.currency {
+  font-size: 16px;
+  font-weight: 500;
+  color: gray;
+  margin-left: 5px;
+}
+.plus {
+  color: green;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+.after_hours {
+  color: gray;
+}
+.minus {
+  color: red;
+}

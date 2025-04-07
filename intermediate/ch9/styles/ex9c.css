@@ -1,0 +1,13 @@
+div {
+  display: inline-block;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border: 1px solid gray;  
+}
+p {
+  font-family: Arial;
+}
+button{
+  font-family: Arial;
+}

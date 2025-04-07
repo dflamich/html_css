@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 7g</title>
+    <style>
+      .user-icon {
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        object-position: top;
+        vertical-align: middle;
+        border-radius: 20px;
+      }
+      .new-tweet {
+        width: 200px;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        vertical-align: middle;
+        font-family: Arial;
+        font-weight: bold;
+        border-radius: 20px;
+      }
+      .tweet-button {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: blue;
+        color: white;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 13px;
+        border: none;
+        border-radius: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: box-shadow 0.15s;
+      }
+      .tweet-button:hover {
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+      }
+      .tweet-button:active {
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img class = "user-icon" src="practice_images/bartholomew.webp">
+    <input class = "new-tweet" type = "text" placeholder="What's happening?">
+    <button class = "tweet-button">Tweet</button>
+  </body>
+</html>
