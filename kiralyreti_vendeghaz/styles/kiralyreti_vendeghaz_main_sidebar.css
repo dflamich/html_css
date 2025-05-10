@@ -1,11 +1,26 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
   z-index: 1;
   position: fixed;
-  bottom: 0;
   right: 0;
   top: 60px;
-  background-color: rgba(0, 0, 0, 0);
-  width: 150px;
+  bottom: 0;
+  background-color: rgb(80, 45, 8);
+  width: 120px;
+  padding-right: 10px;
+  align-items: end;
+}
+
+.sidebar-active {
+  visibility: visible;
+}
+
+@media (min-width: 920px) {
+  .sidebar {
+    visibility: hidden;
+  }  
 }
 
 .sidebar-button-container {
@@ -15,7 +30,7 @@
 
 .sidebar-button {
   z-index: 0;
-  background-color: rgb(196, 164, 132);
+  background-color: rgb(80, 45, 8);
   color: white;
   font-size: 12px;
   border-width: 2px;
@@ -33,28 +48,11 @@
 
 .sidebar-button:hover {
   background-color: white;
-  color: rgb(196, 164, 132);
+  color: rgb(80, 45, 8);
 }
 
 .close-button-container {
   position: fixed;
   top: 65px;
   right: 10px;
-}
-
-.close-button {
-  background-color: rgb(196, 164, 132);
-  width:25px;
-  height: 25px;
-  border:none;
-  cursor: pointer;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  border-radius: 13px;
-}
-
-.close-button-icon {
-  width: 25px;
-  object-fit: cover;
 }

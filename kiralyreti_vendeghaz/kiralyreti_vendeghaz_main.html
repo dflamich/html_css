@@ -53,23 +53,29 @@
               Elérhetőségek
             </button>
           </div>
-          <div class = "menu-button-container">
-            <button class = "menu-button">
+        </div>
+        <div class = "js-header-section3 header-section3">
+          <div class ="social-media-button-container">
+            <a href = "https://www.facebook.com/">
+              <img class = "header-icon-fb" src = "images/facebook_logo.png">
+            </a>
+            <a href = "https://www.instagram.com/">
+              <img class = "header-icon-ig" src = "images/instagram_logo.png">
+            </a>
+          </div>
+          <div class ="menu-button-container">
+            <button 
+              class = "js-menu-button menu-button"
+              onclick="toggleSideBar();"
+            >
               Menü
             </button>
           </div>
+            
         </div>
-        <div class = "header-section3">
-          <a href = "https://www.facebook.com/">
-            <img class = "header-icon-fb" src = "images/facebook_logo.png">
-          </a>
-          <a href = "https://www.instagram.com/">
-            <img class = "header-icon-ig" src = "images/instagram_logo.png">
-          </a>    
-        </div>
-
+        
       </div>
-    <div class = "sidebar">
+    <div class = "js-sidebar sidebar">
         <div class = "sidebar-button-container">
           <button class = "sidebar-button">
             Főoldal
@@ -100,10 +106,17 @@
             Elérhetőségek
           </button>
         </div>
-        <div class = "close-button-container">
-          <button class = "close-button">
-            <img class = "close-button-icon" src = "images/close-icon.png">
-          </button>
+        <div class = "social-media-sidebar-container">
+          <a 
+            href = "https://www.facebook.com/"  
+          >
+            <img class = "header-icon-fb" src = "images/facebook_logo.png">
+          </a>
+          <a 
+            href = "https://www.instagram.com/"
+          >
+            <img class = "header-icon-ig" src = "images/instagram_logo.png">
+          </a>
         </div>
     </div>
     <div class = "background-container">
@@ -120,5 +133,30 @@
         Üdvözöljük a Királyréti Vendégház weboldalán!
       </p>
     </div>
+    <script>
+      function toggleSideBar() {
+        sideBarElement = document
+          .querySelector('.js-sidebar').classList;
+
+        menuButtonElement = document
+          .querySelector('.js-menu-button');
+
+        menuButtonContainerElement = document
+          .querySelector('.js-header-section3');
+
+        if (sideBarElement.contains('sidebar-active')) {
+          sideBarElement.remove('sidebar-active');
+          menuButtonElement.classList.remove('sidebar-toggle');
+          menuButtonContainerElement.classList.remove('sidebar-toggle');
+          menuButtonElement.innerHTML  = 'Menü';
+
+        } else {
+          sideBarElement.add('sidebar-active');
+          menuButtonElement.classList.add('sidebar-toggle');
+          menuButtonContainerElement.classList.add('sidebar-toggle')
+          menuButtonElement.innerHTML = 'X';  
+        }
+      }
+    </script>
   </body>
 </html>
