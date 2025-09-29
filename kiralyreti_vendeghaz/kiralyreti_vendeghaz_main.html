@@ -146,13 +146,13 @@
 
         if (sideBarElement.contains('sidebar-active')) {
           sideBarElement.remove('sidebar-active');
-          menuButtonElement.classList.remove('sidebar-toggle');
+          menuButtonElement.classList.remove('sidebar-toggle-menu-button');
           menuButtonContainerElement.classList.remove('sidebar-toggle');
           menuButtonElement.innerHTML  = 'Menü';
 
         } else {
           sideBarElement.add('sidebar-active');
-          menuButtonElement.classList.add('sidebar-toggle');
+          menuButtonElement.classList.add('sidebar-toggle-menu-button');
           menuButtonContainerElement.classList.add('sidebar-toggle')
           menuButtonElement.innerHTML = 'X';  
         }
