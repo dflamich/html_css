@@ -4,7 +4,7 @@
   left: 0px;
   right: 0px;
   top: 0px;
-  background-color: rgb(20, 13, 7);
+  background-color: transparent;
   height: 60px;
   z-index: 5;
   align-items: center;
@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   margin-left: 10px;
-  color: white;
+  color: rgb(80, 45, 8);
 }
 
 @media (max-width: 920px) {
@@ -25,6 +25,7 @@
     align-items: center;
     margin: 0;
     padding-left: 10px;
+
   }
   
 }
@@ -62,21 +63,24 @@
 
 .header-button {
   z-index: 100;
-  background-color: rgb(20, 13, 7);
+  background-color: rgb(80, 45, 8);
   color: white;
   font-size: 16px;
-  border: none;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.15s color 0.15s;
 }
 
 .header-button:hover {
   background-color: white;
-  color: rgb(20, 13, 7);
+  color: rgb(80, 45, 8);
 }
 
 @media (max-width: 920px) {
@@ -97,6 +101,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
+    background-color: transparent;
     height: 60px;
     z-index: 5;
   }
@@ -127,21 +132,24 @@
 @media (max-width: 920px) {
   .menu-button {
     visibility: visible;
-    background-color: rgb(20, 13, 7);
+    background-color: rgb(80, 45, 8);
     color: white;
     font-size: 20px;
-    border: none;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
     padding-top: 3px;
     padding-bottom: 3px;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.15s color 0.15s;
   }
   
   .menu-button:hover {
     background-color: white;
-    color: rgb(20, 13, 7);
+    color: rgb(80, 45, 8);
   }
 
   .sidebar-toggle {
@@ -149,7 +157,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 50px;
-    background-color: rgb(20, 13, 7);
+    background-color: rgb(80, 45, 8);
   }
 }
 
@@ -159,8 +167,11 @@
   margin-left: 20px;
   margin-right: 10px;
   align-items: center;
-  background-color: rgb(20, 13, 7);
-  border: none;
+  background-color: rgb(80, 45, 8);
+  border-radius: 8px;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
 }
 
 
@@ -184,7 +195,7 @@
 }
 
 .sidebar-toggle {
-  background-color: rgb(20, 13, 7);
+  background-color: rgb(80, 45, 8);
 }
 
 .social-media-button-container {
