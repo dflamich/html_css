@@ -1,0 +1,4 @@
+1. logo+név menjen le középre, ahelyett, hogy a gombok tűnnek el-> elég a query-kben a szélességet megváltoztatni+pár dolgot a CSS-ben
+2. ha nagyon kicsi a weboldal és már sehogy sem férnek el a fenti gombok, csak akkor jöjjön elő a menü gomb, a többi gomb (vagy ha marad a logó+név) csússzon fel  
+3. hamburger menügomb a mostani helyett, annak egy kis négyzetet hagyva
+4. lehet hogy el sem kellene tűnnie a fenti csíknak?
