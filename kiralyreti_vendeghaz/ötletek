@@ -2,3 +2,8 @@
 2. ha nagyon kicsi a weboldal és már sehogy sem férnek el a fenti gombok, csak akkor jöjjön elő a menü gomb, a többi gomb (vagy ha marad a logó+név) csússzon fel  
 3. hamburger menügomb a mostani helyett, annak egy kis négyzetet hagyva
 4. lehet hogy el sem kellene tűnnie a fenti csíknak?
+Menüből kilépést rá a sidebar-ra
+Sidebar-t nagyobbra mint a menü gombot!
+Hol legyen pontosan a menü gomb?
+Sidebar becsúszással együtt a menü gomb kicsússzon?
+Megcsinálni, hogy amikor újra kisebbre veszem az oldalt, a sidebar ne legyen azonnal nyitva -> ha nyitva van, akkor csússzon ki ahogy nagyítom az oldalt, ne eltűnjön

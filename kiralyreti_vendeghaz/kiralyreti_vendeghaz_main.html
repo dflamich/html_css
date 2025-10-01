@@ -13,68 +13,64 @@
     <link rel = "stylesheet" href = "styles/kiralyreti_vendeghaz_main_body.css">
   </head>
   <body> 
-      <div class = "header">
-        <div class = "header-section1">
-          <div class = "logo-container">
-            <img class = "logo" src = "images/logo_placeholder4.webp">
-          </div>  
-          <div class = "name-container">
-            Királyréti vendégház
-          </div>
-        </div>    
-        <div class = "header-section2">
-          <div class = "header-button-container">
-            <button class = "header-button">
-              Főoldal
-            </button>
-          </div>
-          <div class = "header-button-container">
-            <button class = "header-button">
-              Foglalás
-            </button>
-          </div>
-          <div class = "header-button-container">
-            <button class = "header-button">
-              Galéria
-            </button>
-          </div>
-          <div class = "header-button-container">
-            <button class = "header-button">
-              Túrák
-            </button>
-          </div>
-          <div class = "header-button-container">
-            <button class = "header-button">
-              Vélemények
-            </button>
-          </div>
-          <div class = "header-button-container">
-            <button class = "header-button">
-              Elérhetőségek
-            </button>
-          </div>
+    <div class = "header">
+      <div class = "header-section1">
+        <div class = "logo-container">
+          <img class = "logo" src = "images/logo_placeholder4.webp">
+        </div>  
+        <div class = "name-container">
+          Királyréti vendégház
         </div>
-        <div class = "js-header-section3 header-section3">
-          <div class ="social-media-button-container">
-            <a href = "https://www.facebook.com/">
-              <img class = "header-icon-fb" src = "images/facebook_logo.png">
-            </a>
-            <a href = "https://www.instagram.com/">
-              <img class = "header-icon-ig" src = "images/instagram_logo.png">
-            </a>
-          </div>
-          <div class ="menu-button-container">
+      </div>    
+      <div class = "header-section2">
+        <div class = "header-button-container">
+          <button class = "header-button">
+            Főoldal
+          </button>
+        </div>
+        <div class = "header-button-container">
+          <button class = "header-button">
+            Foglalás
+          </button>
+        </div>
+        <div class = "header-button-container">
+          <button class = "header-button">
+            Galéria
+          </button>
+        </div>
+        <div class = "header-button-container">
+          <button class = "header-button">
+            Túrák
+          </button>
+        </div>
+        <div class = "header-button-container">
+          <button class = "header-button">
+            Vélemények
+          </button>
+        </div>
+        <div class = "header-button-container">
+          <button class = "header-button">
+            Elérhetőségek
+          </button>
+        </div>
+        <div class ="social-media-button-container">
+          <a href = "https://www.facebook.com/">
+            <img class = "header-icon-fb" src = "images/facebook_logo.png">
+          </a>
+          <a href = "https://www.instagram.com/">
+            <img class = "header-icon-ig" src = "images/instagram_logo.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class ="js-menu-button-container menu-button-container">
             <button 
               class = "js-menu-button menu-button"
               onclick="toggleSideBar();"
             >
               Menü
             </button>
-          </div>
-            
-        </div>
-        
-      </div>
+    </div>
     <div class = "js-sidebar sidebar">
         <div class = "sidebar-button-container">
           <button class = "sidebar-button">
@@ -142,7 +138,7 @@
           .querySelector('.js-menu-button');
 
         menuButtonContainerElement = document
-          .querySelector('.js-header-section3');
+          .querySelector('.js-menu-button-container');
 
         if (sideBarElement.contains('sidebar-active')) {
           sideBarElement.remove('sidebar-active');
