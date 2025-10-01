@@ -102,12 +102,17 @@
 .menu-button-container {
   position: fixed;
   display: flex;
-  z-index: 150;
+  z-index: 5;
+  height: 30px;
   width: 100px;
   top: -30px;
   right: 0px;
   background-color: rgba(256, 256, 256, 0.65);
-  transition: top 0.5s;
+  transition: top 0.5s, right 0.5s;
+}
+
+.sidebar-active-menu-button {
+  right: -100px;
 }
 
 .menu-button {
@@ -151,6 +156,6 @@
     top: -100px;
   }
   .menu-button-container {
-    top: 30px;
+    top: 10px;
   }
 }

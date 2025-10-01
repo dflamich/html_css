@@ -50,7 +50,7 @@
         </div>
         <div class = "header-button-container">
           <button class = "header-button">
-            Elérhetőségek
+            Kapcsolat
           </button>
         </div>
         <div class ="social-media-button-container">
@@ -65,13 +65,21 @@
     </div>
     <div class ="js-menu-button-container menu-button-container">
             <button 
-              class = "js-menu-button menu-button"
+              class = "menu-button"
               onclick="toggleSideBar();"
             >
               Menü
             </button>
     </div>
     <div class = "js-sidebar sidebar">
+        <div class = "sidebar-exit-button-container">
+          <button 
+          class = "sidebar-exit-button"
+          onclick="toggleSideBar();"
+          >
+            X
+          </button>
+        </div>
         <div class = "sidebar-button-container">
           <button class = "sidebar-button">
             Főoldal
@@ -99,7 +107,7 @@
         </div>
         <div class = "sidebar-button-container">
           <button class = "sidebar-button">
-            Elérhetőségek
+            Kapcsolat
           </button>
         </div>
         <div class = "social-media-sidebar-container">
@@ -123,34 +131,29 @@
         <img class = "image-right" src = "images/szénpatak1.jpeg">
       </div>
     </div>
-    
-    <div class = "page-middle">
-      <p>
-        Üdvözöljük a Királyréti Vendégház weboldalán!
-      </p>
+    <div class = "page-middle-container">
+      <div class = "page-middle-logo-container">
+        <img class = "logo-middle" src = "images/logo_placeholder4.webp">
+      </div>
+      <div class = "page-middle-name-container">
+        Királyréti vendégház
+      </div>
     </div>
     <script>
       function toggleSideBar() {
         sideBarElement = document
           .querySelector('.js-sidebar').classList;
 
-        menuButtonElement = document
-          .querySelector('.js-menu-button');
-
         menuButtonContainerElement = document
           .querySelector('.js-menu-button-container');
 
         if (sideBarElement.contains('sidebar-active')) {
           sideBarElement.remove('sidebar-active');
-          menuButtonElement.classList.remove('sidebar-toggle-menu-button');
-          menuButtonContainerElement.classList.remove('sidebar-toggle');
-          menuButtonElement.innerHTML  = 'Menü';
+          menuButtonContainerElement.classList.remove('sidebar-active-menu-button');
 
         } else {
           sideBarElement.add('sidebar-active');
-          menuButtonElement.classList.add('sidebar-toggle-menu-button');
-          menuButtonContainerElement.classList.add('sidebar-toggle')
-          menuButtonElement.innerHTML = 'X';  
+          menuButtonContainerElement.classList.add('sidebar-active-menu-button')
         }
       }
     </script>

@@ -4,10 +4,10 @@
   z-index: 1;
   position: fixed;
   right: -150px;
-  top: 60px;
-  bottom: 300px;
+  top: 0;
+  bottom: 0px;
   background-color: rgba(256, 256, 256, 0.65);
-  width: 130px;
+  width: 120px;
   align-items: end;
   transition: right 0.5s;
 }
@@ -18,13 +18,35 @@
 
 @media (min-width: 620px) {
   .sidebar {
-    visibility: hidden;
+    right: -150px;
   }  
 }
 
 .sidebar-button-container {
   flex: 1;
   width: 100%;
+}
+
+.sidebar-exit-button-container {
+  position: relative;
+  flex: 1;
+}
+
+.sidebar-exit-button {
+  top: 10px;
+  right: 0px;
+  position: absolute;
+  border: none;
+  width: 30px;
+  height: 30px;
+  color: rgb(80, 45, 8);
+  background-color: transparent;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.sidebar-exit-button:hover {
+  color: white;
+  background-color:rgb(80, 45, 8);
 }
 
 .sidebar-button {
